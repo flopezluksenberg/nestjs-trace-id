@@ -11,7 +11,7 @@
     "test": "jest",
     "test:cov": "jest --coverage",
     "lint": "tslint -p tsconfig.json -c tslint.json",
-    "prepublishOnly": "npm run test && npm run link && npm run build"
+    "prepublishOnly": "npm run test && npm run lint && npm run build"
   },
   "files": [
     "dist/*.{ts,js,map}"
