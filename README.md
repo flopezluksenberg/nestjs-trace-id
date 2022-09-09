@@ -10,7 +10,7 @@ In your `app.module.ts` file do the following
 
 ```typescript
 ...
-import { TraceIdModule } from 'nestjs-trace-id';
+import { TraceIdModule } from '@flopezluksenberg/nestjs-trace-id';
 ...
 @Module({
   imports: [
@@ -66,7 +66,7 @@ If you are using Pino for logging, you can setup the traceId in the logs in orde
 ```typescript
 
 ...
-import { TraceIdModule, TraceIdMiddleware } from 'nestjs-trace-id';
+import { TraceIdModule, TraceIdMiddleware } from '@flopezluksenberg/nestjs-trace-id';
 ...
 @Module({
   imports: [
@@ -96,7 +96,7 @@ export class AppModule {}
 You can also access to request identifier if you need to pass to somewhere
 
 ```typescript
-import { TraceIdMiddleware } from './trace-id.middleware';
+import { TraceIdMiddleware } from '@flopezluksenberg/nestjs-trace-id';
 
 @Controller('/somewhere')
 export class SomeController {
